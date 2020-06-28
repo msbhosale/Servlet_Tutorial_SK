@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SchoolApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>School Name</param-name>
+    <param-value> Dnyaneshwar New - English School </param-value>
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>FifthClass</display-name>
+    <servlet-name>FifthClass</servlet-name>
+    <servlet-class>in.happycoding.servlet.FifthClass</servlet-class>
+    <init-param>
+    	<param-name>Teacher</param-name>
+    	<param-value> Sachin Kanawade </param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FifthClass</servlet-name>
+    <url-pattern>/FifthClass</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SixthClass</display-name>
+    <servlet-name>SixthClass</servlet-name>
+    <servlet-class>in.happycoding.servlet.SixthClass</servlet-class>
+    <init-param>
+    	<param-name>Teacher</param-name>
+    	<param-value> Vaibhav Dandale </param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SixthClass</servlet-name>
+    <url-pattern>/SixthClass</url-pattern>
+  </servlet-mapping>
+</web-app>
